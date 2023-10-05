@@ -100,8 +100,8 @@ public class YlabelCalc {
       return i;
    }
 
-   public static void main(String[] args) {
-      new YlabelCalc(new Float(args[0]).floatValue(),
-            new Float(args[1]).floatValue());
-   }
+//   public static void main(String[] args) {
+//      new YlabelCalc(new Float(args[0]).floatValue(),
+//            new Float(args[1]).floatValue());
+//   }
 }

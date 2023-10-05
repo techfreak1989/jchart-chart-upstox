@@ -7,6 +7,7 @@ import com.jchart.io.IoJchartBase;
 import com.jchart.io.factory.IoFactoryIntr;
 import com.jchart.io.quoteretriever.IQuoteRetriever;
 import com.jchart.io.quoteretriever.alphavantage.AlphaQuoteRetriever;
+import com.jchart.io.quoteretriever.upstox.UpstoxQuoteRetriever;
 import com.jchart.model.JchartComposite;
 import com.jchart.model.Quote;
 import com.jchart.model.QuoteDataModel;
@@ -16,7 +17,8 @@ import com.jchart.model.QuoteDataModel;
  */
 public class IoJchartPsr extends IoJchartBase implements IoFactoryIntr {
    
-   private IQuoteRetriever _quoteRetriever = new AlphaQuoteRetriever();
+   private IQuoteRetriever _quoteRetriever = new UpstoxQuoteRetriever();
+//   private IQuoteRetriever _quoteRetriever = new AlphaQuoteRetriever();
 
    protected boolean getEodQuotes(String sbl, JchartComposite jchartComposite)
          throws Exception {
